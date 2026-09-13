@@ -16,3 +16,6 @@ These primitives alone do not provide or certify a complete product isolation bo
 
 Build: `dotnet build CSweet.Isolation.slnx -c Release`.
 Do not sign or publish release artifacts from an ordinary development runner.
+
+- [CSweet.LinuxImage 1.0.2](tools/LinuxImage/README.md): shared installer-owned Ubuntu image provisioning for Office and generic compute, distributed as a PowerShell module independently of the NuGet primitives.
+
