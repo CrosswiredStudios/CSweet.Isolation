@@ -25,3 +25,26 @@ release. Tags must match the `Version` (`v0.1.0` for `0.1.0`).
 
 - [CSweet.LinuxImage 1.0.2](tools/LinuxImage/README.md): shared installer-owned Ubuntu image provisioning for Office and generic compute, distributed as a PowerShell module independently of the NuGet primitives.
 
+## Documentation
+
+Full docs live in [`docs/`](docs/README.md) — start with
+[Getting started](docs/getting-started.md), then
+[Architecture](docs/architecture.md):
+
+- [Getting started](docs/getting-started.md) — prerequisites, build, test, first image build
+- [Architecture](docs/architecture.md) — solution map, responsibilities, data flow
+- [Repository layout](docs/repository-layout.md) — file tree with ownership notes
+- [Security primitives](docs/security-primitives.md) — authorization encoding and digests
+- [Artifact media](docs/artifact-media.md) — deterministic ISO write/verify contracts
+- [Hyper-V](docs/hyperv.md) — VM commands, socket transports, error codes
+- [Linux image](docs/linux-image.md) — image module, Packer pipeline, sealing
+- [Build, test, release](docs/build-test-release.md) — CI, versioning, trusted publishing
+- [Testing](docs/testing.md) — Pester suites and what they do not prove
+- [Security model](docs/security-model.md) — threat model, trust boundaries, non-goals
+- [Contributing](docs/contributing.md) — conventions and PR expectations
+- [Glossary](docs/glossary.md) — terms
+
+Agent entry points: [`AGENTS.md`](AGENTS.md) (all agents),
+[`CLAUDE.md`](CLAUDE.md), [`CODEX.md`](CODEX.md), [`GEMINI.md`](GEMINI.md),
+[Copilot instructions](.github/muse-instructions.md).
+
