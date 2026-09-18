@@ -1,1 +1,1 @@
-<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><Description>Shared Hyper-V lifecycle and guest socket transport for isolated C-Sweet execution services.</Description></PropertyGroup></Project>
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><PackageId>CSweet.Isolation.HyperV</PackageId><Description>Shared Hyper-V lifecycle and guest socket transport for isolated C-Sweet execution services.</Description></PropertyGroup></Project>

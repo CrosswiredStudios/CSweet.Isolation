@@ -2,7 +2,7 @@
 
 Shared implementation primitives for independent execution services.
 
-- CSweet.Isolation.Security 0.1.0: canonical SHA-256 references and purpose-separated workload authorization encoding (.NET 8).
+- CSweet.Isolation.Security 0.1.0: canonical SHA-256 references and purpose-separated workload authorization encoding (.NET 10).
 - CSweet.Isolation.Artifacts 0.1.0: deterministic verified read-only ISO media (.NET 10).
 - CSweet.Isolation.HyperV 0.1.0: bounded Windows VM commands, host socket transport, and Linux guest socket listener (.NET 10).
 
@@ -16,6 +16,12 @@ These primitives alone do not provide or certify a complete product isolation bo
 
 Build: `dotnet build CSweet.Isolation.slnx -c Release`.
 Do not sign or publish release artifacts from an ordinary development runner.
+
+Release: bump `Version` in `Directory.Build.props` (shared by all three
+packages). Pushing that change to `main` — or pushing a matching `v*.*.*` tag —
+runs `publish-nuget`, which builds, packs, pushes all three packages to
+NuGet.org via trusted publishing (`NUGET_USER` secret), and creates a GitHub
+release. Tags must match the `Version` (`v0.1.0` for `0.1.0`).
 
 - [CSweet.LinuxImage 1.0.2](tools/LinuxImage/README.md): shared installer-owned Ubuntu image provisioning for Office and generic compute, distributed as a PowerShell module independently of the NuGet primitives.
 
